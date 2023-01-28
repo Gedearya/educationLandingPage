@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanbercode Mentorship</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <!---start header---->
+    <header>
+      <a href="#home" class="logo">
+        <span style="color: blue; font-weight: bold">Q</span>-B<span
+          style="color: blue; font-weight: bold"
+          >ee</span
+        >
+      </a>
+
+      <!---start navigation---->
+      <nav>
+        <ul class="navbar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#mentors">Mentors</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-icons">
+        <span class="sign"
+          ><a href="#"
+            ><span style="color: blue; font-weight: bold">Sign In</span></a
+          ></span
+        >
+        <a href="#"><button class="btn-primary">Register</button></a>
+        <div class="bx bx-menu" id="menu-icon" style="padding-left: 15px"></div>
+      </div>
+    </header>
+
+    <!---start main---->
+    <main>
+      <!---start hero section---->
+      <section class="home" id="home">
+        <div class="home-text">
+          <h1>
+            Getting
+            <span style="color: blue; font-weight: bold">Quality</span>
+            Education Is Now More
+            <span style="color: blue; font-weight: bold">Easy</span>
+          </h1>
+          <p>
+            Provides you with the latest online learning system and material
+            that help your knowledge growing
+          </p>
+          <ul class="hero-button">
+            <li class="hero-button-item">
+              <button class="btn-primary2">Get Started</button>
+            </li>
+            <li class="hero-button-item">
+              <button class="btn-secondary">Get Free Trial</button>
+            </li>
+          </ul>
+        </div>
+        <div class="home-img">
+          <img src="assets/images/hero.png" alt="hero" />
+        </div>
+      </section>
+
+      <!---start container section---->
+      <section class="container">
+        <div class="container-box">
+          <div class="container-img">
+            <img
+              src="data:image/png;base64,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"
+            />
+          </div>
+          <div class="container-text">
+            <h4>10k+</h4>
+            <p>Total Courses</p>
+          </div>
+        </div>
+        <div class="container-box">
+          <div class="container-img">
+            <img
+              src="data:image/png;base64,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"
+            />
+          </div>
+          <div class="container-text">
+            <h4>500+</h4>
+            <p>Expert Mentors</p>
+          </div>
+        </div>
+        <div class="container-box">
+          <div class="container-img">
+            <img
+              src="data:image/png;base64,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"
+            />
+          </div>
+          <div class="container-text">
+            <h4>300K+</h4>
+            <p>Students Globally</p>
+          </div>
+        </div>
+      </section>
+
+      <!---start category section---->
+      <section class="categories" id="categories">
+        <div class="space">
+          <div class="left-text">
+            <h2>Explore Courses by Category</h2>
+            <p>
+              Browse top class courses by browsing our category which will be
+              more easy for you
+            </p>
+          </div>
+          <div class="main-btn">
+            <a href="#"><button class="btn-primary">All Category</button></a>
+          </div>
+        </div>
+        <div class="categories-content">
+          <div class="box">
+            <img src="https://img.lovepik.com/element/45009/5305.png_860.png" />
+            <span><h3>Design & Development</h3></span>
+            <p>250+ courses available</p>
+          </div>
+          <div class="box">
+            <img src="https://img.lovepik.com/element/45009/5305.png_860.png" />
+            <h3>Marketing & Communication</h3>
+            <p>300+ courses available</p>
+          </div>
+          <div class="box">
+            <img src="https://img.lovepik.com/element/45009/5305.png_860.png" />
+            <h3>Digital Marketing</h3>
+            <p>150+ courses available</p>
+          </div>
+          <div class="box">
+            <img src="https://img.lovepik.com/element/45009/5305.png_860.png" />
+            <h3>Business & Consulting</h3>
+            <p>170+ courses available</p>
+          </div>
+          <div class="box">
+            <img src="https://img.lovepik.com/element/45009/5305.png_860.png" />
+            <h3>Finance Management</h3>
+            <p>300+ courses available</p>
+          </div>
+          <div class="box">
+            <img src="https://img.lovepik.com/element/45009/5305.png_860.png" />
+            <h3>Self Development</h3>
+            <p>50+ courses available</p>
+          </div>
+        </div>
+      </section>
+
+      <!---start course section---->
+      <section class="courses" id="courses">
+        <div class="space">
+          <div class="left-text">
+            <h2>Popular Courses For You</h2>
+            <p>Get the best course with best price with world-class tutor</p>
+          </div>
+          <div class="main-btn">
+            <a href="#"><button class="btn-primary">See All Jobs</button></a>
+          </div>
+        </div>
+        <div class="courses-content">
+          <div class="row">
+            <img
+              src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/09/WHAT-IS-WEB-DESIGN.jpg?auto=format&q=60&w=1860&h=1090&fit=crop&crop=faces"
+            />
+            <div class="courses-text">
+              <button class="btn-secondary2">Web Design</button>
+              <h3>Learn app development in 30 Days</h3>
+              <!-- <h6>05 hours 15 minutes</h6> -->
+              <div class="rating">
+                <div class="review">
+                  <p>
+                    <i class="fas fa-user-graduate" style="color: green"></i>
+                    500K+
+                  </p>
+                </div>
+                <div class="review">
+                  <p><i class="fas fa-star" style="color: yellow"></i> 4.9</p>
+                </div>
+                <div class="review">
+                  <p>
+                    <i
+                      class="fas fa-money-bill-wave-alt"
+                      style="color: red"
+                    ></i>
+                    Rp. 99K
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <img
+              src="https://usabilitygeek.com/wp-content/uploads/2019/02/psychology-web-design-00-lead.jpg"
+            />
+            <div class="courses-text">
+              <button class="btn-secondary2">Graphic Design</button>
+              <!-- <h5>Graphic Design</h5> -->
+              <h3>Advance motion graphics</h3>
+              <div class="rating">
+                <!-- <div class="star">
+                  <a href="#"><i class="bx bxs-star"></i></a>
+                  <a href="#"><i class="bx bxs-star"></i></a>
+                  <a href="#"><i class="bx bxs-star"></i></a>
+                  <a href="#"><i class="bx bxs-star"></i></a>
+                  <a href="#"><i class="bx bxs-star"></i></a>
+                </div> -->
+                <div class="review">
+                  <p>
+                    <i class="fas fa-user-graduate" style="color: green"></i>
+                    500K+
+                  </p>
+                </div>
+                <div class="review">
+                  <p><i class="fas fa-star" style="color: yellow"></i> 4.9</p>
+                </div>
+                <div class="review">
+                  <p>
+                    <i
+                      class="fas fa-money-bill-wave-alt"
+                      style="color: red"
+                    ></i>
+                    Rp. 99K
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <img
+              src="https://images.ctfassets.net/gg4ddi543f5b/7AHjFKPTt6B5ZwI8oI52rN/862db70ca26d7a72ce642932527e252d/web-design-workflow-blog.png"
+            />
+            <div class="courses-text">
+              <button class="btn-secondary2">Web Design</button>
+              <!-- <h5>Web Design</h5> -->
+              <h3>Learn CMS Development</h3>
+              <div class="rating">
+                <div class="review">
+                  <p>
+                    <i class="fas fa-user-graduate" style="color: green"></i>
+                    500K+
+                  </p>
+                </div>
+                <div class="review">
+                  <p><i class="fas fa-star" style="color: yellow"></i> 4.9</p>
+                </div>
+                <div class="review">
+                  <p>
+                    <i
+                      class="fas fa-money-bill-wave-alt"
+                      style="color: red"
+                    ></i>
+                    Rp. 99K
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <img
+              src="https://awprojekt-art.pl/wp-content/uploads/2022/05/Web-Design-vs-Web-Development.jpg"
+            />
+            <div class="courses-text">
+              <button class="btn-secondary2">Web Design</button>
+              <!-- <h5>Web Design</h5> -->
+              <h3>The Complete Web Design Course</h3>
+              <div class="rating">
+                <div class="review">
+                  <p>
+                    <i class="fas fa-user-graduate" style="color: green"></i>
+                    500K+
+                  </p>
+                </div>
+                <div class="review">
+                  <p><i class="fas fa-star" style="color: yellow"></i> 4.9</p>
+                </div>
+                <div class="review">
+                  <p>
+                    <i
+                      class="fas fa-money-bill-wave-alt"
+                      style="color: red"
+                    ></i>
+                    Rp. 99K
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <img
+              src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2020/07/Best_web_design_tutorials_on_the_internet_jpg_xUsjt6Kw-700x410.jpg?auto=format&q=60&fit=max&w=930"
+            />
+            <div class="courses-text">
+              <button class="btn-secondary2">Art</button>
+              <!-- <h5>Art</h5> -->
+              <h3>Advance Drawing</h3>
+              <div class="rating">
+                <div class="review">
+                  <p>
+                    <i class="fas fa-user-graduate" style="color: green"></i>
+                    500K+
+                  </p>
+                </div>
+                <div class="review">
+                  <p><i class="fas fa-star" style="color: yellow"></i> 4.9</p>
+                </div>
+                <div class="review">
+                  <p>
+                    <i
+                      class="fas fa-money-bill-wave-alt"
+                      style="color: red"
+                    ></i>
+                    Rp. 99K
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <img
+              src="https://softwareauggest-blogimages.s3.ca-central-1.amazonaws.com/blog/wp-content/uploads/2019/12/12193533/11-Best-Web-Design-Companies-in-India.png"
+            />
+            <div class="courses-text">
+              <button class="btn-secondary2">Media</button>
+              <!-- <h5>Media</h5> -->
+              <h3>Advance videography</h3>
+              <div class="rating">
+                <div class="review">
+                  <p>
+                    <i class="fas fa-user-graduate" style="color: green"></i>
+                    500K+
+                  </p>
+                </div>
+                <div class="review">
+                  <p><i class="fas fa-star" style="color: yellow"></i> 4.9</p>
+                </div>
+                <div class="review">
+                  <p>
+                    <i
+                      class="fas fa-money-bill-wave-alt"
+                      style="color: red"
+                    ></i>
+                    Rp. 99K
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---start testimony section---->
+      <section class="testimony" id="mentors">
+        <div class="space">
+          <div class="left-text">
+            <h1>
+              What our students are <br />
+              saying about us
+            </h1>
+          </div>
+          <p>
+            You learn today and earn tommorow. The roots of education
+            <br />are bitter but the fruits are sweet. If you learn today you
+            can <br />
+            earn tommorow.
+          </p>
+        </div>
+        <div class="wrapper">
+          <div class="box">
+            <h3>Great Platform</h3>
+            <i class="fas fa-quote-left quote"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              distinctio saepe voluptatem hic. Cumque reiciendis ipsa illum
+              magni sunt, est itaque distinctio molestiae.
+            </p>
+            <hr />
+            <div class="content">
+              <div class="image">
+                <img
+                  src="https://assets.promediateknologi.com/crop/0x0:0x0/0x0/webp/photo/2022/07/27/445721575.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <div class="name">Lee Ji-eun (IU)</div>
+                <!-- <div class="job">Designer | Developer</div> -->
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <h3>Great Platform</h3>
+            <i class="fas fa-quote-left quote"></i>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Assumenda quibusdam, quis accusamus nisi ab eveniet, expedita
+              vitae placeat est autem aperiam neque officiis.
+            </p>
+            <hr />
+            <div class="content">
+              <div class="image">
+                <img src="https://i.mydramalist.com/B8ZnV_5_c.jpg" alt="" />
+              </div>
+              <div class="info">
+                <div class="name">Lalisa (Blackpink)</div>
+                <!-- <div class="job">YouTuber | Blogger</div> -->
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <h3>Great Platform</h3>
+            <i class="fas fa-quote-left quote"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              obcaecati laborum error incidunt voluptates delectus, hic cum
+              repudiandae excepturi! A inventore dolor optio.
+            </p>
+            <hr />
+            <div class="content">
+              <div class="image">
+                <img
+                  src="https://pyxis.nymag.com/v1/imgs/7c5/45f/0fd3c26c47f854788daadbb545a3a8e1bb-adamlevine.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <div class="name">Adam Levine</div>
+                <!-- <div class="job">Freelancer | Advertiser</div> -->
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---start subscribe section---->
+      <section class="subscribe" id="about">
+        <div class="subscribe-text">
+          <!-- <h6>Best online learning platform</h6> -->
+          <h1>Subscribe Newsletter</h1>
+          <p>
+            You learn today and earn tommorow. The roots of education are bitter
+            but the fruits are sweet.
+          </p>
+          <div class="latter">
+            <form>
+              <input
+                type="email"
+                placeholder="Enter Your Email Address"
+                required
+              />
+              <input type="submit" value="Subscribe" required />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!---start footer---->
+    <footer>
+      <!---start contact section---->
+      <section class="contact" id="contact">
+        <div class="main-contact">
+          <div class="contact-content">
+            <a href="#" class="logo">
+              <span style="color: blue; font-weight: bold">Q</span>-B<span
+                style="color: blue; font-weight: bold"
+                >ee</span
+              >
+            </a>
+            <li>
+              <p style="margin-top: 20px">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+                laudantium asperiores iusto totam facere, ipsum voluptatum
+                deleniti?
+              </p>
+            </li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+          </div>
+
+          <div class="contact-content">
+            <li><h3>Links</h3></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#service">Services</a></li>
+          </div>
+
+          <div class="contact-content">
+            <li><h3>Community</h3></li>
+            <li><a href="#">Go Premium</a></li>
+            <li><a href="#">Team Plans</a></li>
+            <li><a href="#">Refer a Friend</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </div>
+
+          <div class="contact-content">
+            <li><h3>Resources</h3></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Latest Update</a></li>
+            <li><a href="#">Updates Newsletter</a></li>
+            <li><a href="#">Flow Management</a></li>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <div class="down">
+        <div class="last-text">
+          <p>Copyright © Q-Bee 2023. All rights reserved.</p>
+        </div>
+        <div class="up">
+          <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class="fas fa-chevron-circle-up fa-3x"></i>
+          </button>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
