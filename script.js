@@ -17,8 +17,8 @@ window.onscroll = () => {
   navbar.classList.remove("open");
 };
 
-// Get the button:
-let mybutton = document.getElementById("upBtn");
+// Get to the top page
+let upButton = document.getElementById("upBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -27,9 +27,9 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    upButton.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    upButton.style.display = "none";
   }
 }
 
@@ -37,4 +37,10 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+// Change into Dark Mode
+function darkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
 }
